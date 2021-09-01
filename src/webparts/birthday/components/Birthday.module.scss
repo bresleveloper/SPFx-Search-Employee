@@ -1,0 +1,128 @@
+@import '~office-ui-fabric-react/dist/sass/References.scss';
+
+.birthday {
+  .container {
+    width: 474px;
+    margin: 0px auto;
+    // box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .row {
+    @include ms-Grid-row;
+    @include ms-fontColor-white;
+    background-color: #7F7F7F;
+    // background-color: inherit;
+  }
+
+  .column {
+    // @include ms-Grid-col;
+    // @include ms-lg10;
+    // @include ms-xl8;
+    // @include ms-xlPush2;
+    // @include ms-lgPush1;
+    // width: 325px;
+    padding-left: 62.65px;
+    padding-right: 23px;
+    min-height: 614px;
+  }
+  // !important
+  .title {
+    @include ms-font-xl;
+    @include ms-fontColor-white;
+  }
+
+  .subTitle {
+    @include ms-font-l;
+    @include ms-fontColor-white;
+  }
+
+  .description {
+    @include ms-font-l;
+    @include ms-fontColor-white;
+  }
+
+  .SliderComp{
+//  .slick-dots li.slick-active button:before {
+//     color: white!important;
+//   }
+
+  ul  {
+    position: unset!important;
+
+    button:before {
+    color: white!important;
+    }
+  }
+  }
+ 
+  .headline{
+     display: flex; align-items: baseline;
+     flex-direction: unset; padding: 0 24px;
+ 
+
+    .Ballons {
+      width: 39px;
+      height: 57px;
+    }
+    
+    .title{
+      margin-right: auto; margin-left: auto; font: normal normal bold 30px/40px Segoe UI;
+      letter-spacing: 0px;
+      color: #FFC82E;
+      opacity: 1;
+    }
+  }
+
+  .main{ 
+    display: flex; justify-content: space-between; direction: rtl; margin-bottom: 33px;
+  
+    .top{
+      display: flex;
+  
+      .profile{
+      width: 85px; height: 85px; border-radius: 50% 
+      }
+  
+      .Details{
+       display: flex; flex-direction: column; padding-right: 12px;
+  
+       .Name{
+        margin: 9px 0 0px; font: normal normal bold 18px/24px Segoe UI;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        opacity: 1; 
+       }
+  
+       .role{
+        margin: 0 0 9px; font: normal normal normal 14px/19px Segoe UI;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        opacity: 1;
+       }
+  
+       .MessageIcon{
+        width: 25px;
+        height: 18px; 
+       }
+      }
+    }
+  
+    .Left{
+      display: flex; flex-direction: column; justify-content: flex-end; 
+  
+      .CakeIcon{
+        width: 47px;
+       height: 38px;
+      }
+  
+      .date{
+        font: normal normal bold 18px/24px Segoe UI;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        opacity: 1;
+      }
+    }
+  
+  }
+
+}
