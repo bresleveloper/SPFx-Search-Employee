@@ -13,6 +13,8 @@ export default class Birthday extends React.Component<IBirthdayProps, BirthdaySt
     super(props)
     this.spOp = new ServiceSP();
     this.state = { List: null, listToUse: null }
+
+    //make sure minHeight is correnct, only num, add "px"
   }
 
 
@@ -52,7 +54,7 @@ export default class Birthday extends React.Component<IBirthdayProps, BirthdaySt
                 <h5 className={styles.Name}>{people.PreferredName}</h5>
                 <p className={styles.role}>{people.Department}</p>
                 <a href={h}>
-                <img className={styles.MessageIcon} src={require('../../../icons/Email_icon.png')} alt="Email_icon" />
+                  <img className={styles.MessageIcon} src={require('../../../icons/Email_icon.png')} alt="Email_icon" />
                 </a>
               </div>
             </div>

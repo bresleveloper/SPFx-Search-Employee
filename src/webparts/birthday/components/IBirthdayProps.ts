@@ -4,4 +4,5 @@ export interface IBirthdayProps {
   before: string;
   after: string;
   context: WebPartContext;
+  minHeight:string;
 }

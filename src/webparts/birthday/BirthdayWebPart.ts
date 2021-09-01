@@ -14,6 +14,7 @@ import { IBirthdayProps } from './components/IBirthdayProps';
 export interface IBirthdayWebPartProps {
   before: string;
   after: string;
+  minHeight: string;
 }
 
 export default class BirthdayWebPart extends BaseClientSideWebPart<IBirthdayWebPartProps> {
@@ -24,7 +25,8 @@ export default class BirthdayWebPart extends BaseClientSideWebPart<IBirthdayWebP
       {
         before: this.properties.before,
         after: this.properties.after,
-        context: this.context
+        context: this.context,
+        minHeight: this.properties.minHeight ? this.properties.minHeight : "614",
       }
     );
 
@@ -44,7 +46,7 @@ export default class BirthdayWebPart extends BaseClientSideWebPart<IBirthdayWebP
       pages: [
         {
           header: {
-            description: "date"
+            description: "Settings"
           },
           groups: [
             {
@@ -52,10 +54,10 @@ export default class BirthdayWebPart extends BaseClientSideWebPart<IBirthdayWebP
               groupName: strings.BasicGroupName,
               groupFields: [
                 PropertyPaneTextField('before', {
-                  label: "before"
+                  label: "Days Before today"
                 }),
                 PropertyPaneTextField('after', {
-                  label: "after"
+                  label: "Days After today"
                 })
               ]
             }
