@@ -1,5 +1,11 @@
 @import '~office-ui-fabric-react/dist/sass/References.scss';
 
+.h_b_50a7110f {
+   background-color: #7F7F7F;
+}
+.carousel-dots li button:before {
+  font-size: 10px;
+}
 .birthday {
   .container {
     //width: 474px;
@@ -19,11 +25,9 @@
     //padding-left: 62.65px;
     // => num/full = %, 62.65/474=13%
     padding-left: 13%;
-
     //padding-right: 23px;
     padding-right: 4.8%;
-
-    min-height: 614px;
+    // min-height: 614px;
   }
   // !important
   .title {
@@ -57,16 +61,19 @@
  
   .headline{
      display: flex; align-items: baseline;
-     flex-direction: unset; padding: 0 24px;
+     flex-direction: unset; padding: 0px 15px 0 43px;
  
 
     .Ballons {
-      width: 39px;
-      height: 57px;
+      // width: 39px;
+      // height: 57px;
+      width: 30px;
+      height: 45px;
     }
     
     .title{
-      margin-right: auto; margin-left: auto; font: normal normal bold 30px/40px Segoe UI;
+      // margin-right: auto; margin-left: auto; font: normal normal bold 30px/40px Segoe UI;
+      margin-right: auto; margin-left: auto; font: normal normal bold  18px/40px Segoe UI;
       letter-spacing: 0px;
       color: #FFC82E;
       opacity: 1;
@@ -80,21 +87,24 @@
       display: flex;
   
       .profile{
-      width: 85px; height: 85px; border-radius: 50% 
+      // width: 85px; height: 85px; border-radius: 50% 
+      width: 60px; height: 60px; border-radius: 50% 
       }
   
       .Details{
        display: flex; flex-direction: column; padding-right: 12px;
   
        .Name{
-        margin: 9px 0 0px; font: normal normal bold 18px/24px Segoe UI;
+        margin: 0; font: normal normal bold 14px/24px Segoe UI;
         letter-spacing: 0px;
         color: #FFFFFF;
         opacity: 1; 
        }
   
        .role{
-        margin: 0 0 9px; font: normal normal normal 14px/19px Segoe UI;
+        margin: -4px 0 2px;
+         font: normal normal normal 12px/19px Segoe UI;
+        // margin: 0 0 9px; font: normal normal normal 12px/19px Segoe UI;
         letter-spacing: 0px;
         color: #FFFFFF;
         opacity: 1;
@@ -111,12 +121,14 @@
       display: flex; flex-direction: column; justify-content: flex-end; 
   
       .CakeIcon{
-        width: 47px;
-       height: 38px;
+      //   width: 47px;
+      //  height: 38px;
+       width: 40px;
+       height: 36px;
       }
   
       .date{
-        font: normal normal bold 18px/24px Segoe UI;
+        font: normal normal bold 14px/24px Segoe UI;
         letter-spacing: 0px;
         color: #FFFFFF;
         opacity: 1;

@@ -5,4 +5,10 @@ export interface IBirthdayProps {
   after: string;
   context: WebPartContext;
   minHeight:string;
+  Dots: boolean;
+  Speed: number;
+  SlidesToShow: number;
+  PauseOnHover: boolean;
+  Autoplay: boolean;
+  AutoplaySpeed: number;
 }
